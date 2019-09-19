@@ -17,8 +17,8 @@ public class main {
             AgentController rma = myContainer.createNewAgent("rma", "jade.tools.rma.rma", null);
             rma.start();
 
-            //AgentController myAgent = myContainer.createNewAgent("TimerFred", TimerAgent.class.getCanonicalName(), null);
-            //myAgent.start();
+            AgentController myAgent = myContainer.createNewAgent("TimerFred", TimerAgent.class.getCanonicalName(), null);
+            myAgent.start();
 
             create10SuicideAgents(myContainer);
 
