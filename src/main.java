@@ -20,7 +20,7 @@ public class main {
             //AgentController myAgent = myContainer.createNewAgent("TimerFred", TimerAgent.class.getCanonicalName(), null);
             //myAgent.start();
 
-            create10simpletons(myContainer);
+            create10SuicideAgents(myContainer);
 
 
         } catch(Exception e) {
@@ -29,7 +29,7 @@ public class main {
 
     }
 
-    private static void create10simpletons(ContainerController myContainer) throws StaleProxyException {
+    private static void create10SuicideAgents(ContainerController myContainer) throws StaleProxyException {
         AgentController myAgent1 = myContainer.createNewAgent("Fred", SimpleSuicideAgent.class.getCanonicalName(), null);
         AgentController myAgent2 = myContainer.createNewAgent("George", SimpleSuicideAgent.class.getCanonicalName(), null);
         AgentController myAgent3 = myContainer.createNewAgent("Paul", SimpleSuicideAgent.class.getCanonicalName(), null);

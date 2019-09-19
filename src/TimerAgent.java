@@ -14,6 +14,7 @@ public class TimerAgent extends Agent {
             protected void onTick() {
                 long runTime = System.currentTimeMillis() - launchTime;
                 System.out.println( runTime +   ": " + myAgent.getLocalName());
+                //after a minute, kill the agent
                 if (runTime > 60000) {
                     System.out.println("One minute elapsed, bye bye");
                     myAgent.doDelete();
